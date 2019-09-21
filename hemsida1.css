@@ -1,0 +1,78 @@
+/* listan utan någon style(asså punkter siffror och osv.
+0 margin och0 padding för att ta bort dem töma mellan room och områden som skappas med listan .
+overflow hidden bestämmer en yta för den listan .
+background färg med en kod.*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;}
+/* float lrft gör att listan börja längst från vänster.
+border right gör en liten streck mellan ord på listan som mellan room*/
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+/* display block gör att listan området ser ut som låda.
+färg vit.
+centrerad textjustering.
+padding för hur stor töma mellan room i två demntioner uppe och höger
+inga text dekoration för att ta bort linjen som är under ord*/
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;}
+/* hover betyder när man picker med mouse över ett ord eller område
+när man picker med mouse över dem ord som finns på listan så andras backgrounden färgen till svart*/
+li a:hover {
+  background-color: black;}
+/* backgound färg tomatröd för sidan.*/
+body{background-color:tomato}
+
+/* andra storlek på bild genom class.*/
+.img1{
+width:25%;
+height:40%;}
+/* lagg till gränse för tabellen, ändrade storleken till 75% av sidans bredden
+gränsen för tabellen är 2px tjock  svart linje.*/
+table {
+  border-collapse: collapse;
+  width: 75%;
+  border: 2px solid black}
+/*Här lagg jag till gränse mellan ord i tabellen,så det ser ut som en riktigt tabell*/
+table, th, td {
+  border: 1px solid black;
+}
+/*vänster textjustering.
+padding för större område som mellan room i tabbellens ord*/
+th, td {
+  text-align: left;
+  padding: 16px;}
+/* har använder jag nth child som selektor i tabbelen (even betyder en nej en ja) andrade färgen för att få Zebra striping style.*/
+tr:nth-child(even) {
+  background-color: grey;}
+/* har använder jag nth child som selektor i tabbelen (odd betyder en ja en nej) andrade färgen för att få Zebra striping style.*/
+tr:nth-child(odd){
+  background-color: white;}
+/* här ändrade jag linkens färge genom klassen*/
+.link1:link {
+  color: red;
+}
+/* har ändrade jag länkens färg när användaren har besökt länken */
+.link1:visited {
+  color: lightblue;
+}
+/* har ändrade jag länkens färg när användaren picker med mouse på den */
+
+.link1:hover {
+  color: blue;
+}
+/* har andrade jag textens färg och lagg till en underlinje under texten */
+
+.mma {color: blue; 
+    text-decoration: underline;}
+
+
